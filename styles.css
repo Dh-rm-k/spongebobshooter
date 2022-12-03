@@ -1,0 +1,89 @@
+* {
+    margin: auto;
+}
+body {
+    margin-top: 30px;
+    background-image:url('src/background.jpg');
+    background-size: cover;
+}
+/*style="background-image: url("https://media.giphy.com/avatars/spongebob/U4nimQFVGMqR/200h.jpg");"*/
+.grid {
+    width: 600px;
+    height: 600px;
+    /* background-color:#1B2830 ; */
+
+    /* border-image: url('src/bush.png'); */
+    /* -webkit-border-image: url(src/bush.png) 30 round; Safari 3.1-5 */
+    /* -o-border-image: url(src/bush.png) 30 round; Opera 11-12.1 */
+    /* margin: 0 -1em; */
+    /* border-image: 16 repeat; */
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.grid:before{
+    content: "";
+    outline: 10px solid black;
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    z-index: -1;
+}
+.playing{
+    background-image: url('src/ground.jpg') ;
+    background-size: cover;
+}
+.grid div {
+    height: 30px;
+    width: 30px;
+    border: none;
+}
+
+.invader img { 
+    max-height: 50px;
+    max-width: 50px;
+    /* object-fit: contain; */
+    z-index: 99;
+ }
+.shooter{
+    display:table-cell; 
+    vertical-align:middle; 
+    transform: translateY(-50px);
+}
+#sponge{
+    height: 140px;
+    width: 140px;
+    
+}
+.boom{
+    background-image: url('src/boom.png');
+    background-size: cover;
+}
+.laser {
+    background-image: url('https://media2.giphy.com/media/yBTDrAUFmosbhSJ5Aq/giphy.gif?cid=ecf05e47uja0yn7cr2zm7pp34d95reoirga3j4qdj4adreuj&rid=giphy.gif&ct=s');
+    background-size: 30px 30px;
+}
+
+#result {
+    margin: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    /* background-color: red; */
+    text-align: center;
+    height: 100px;
+    font-size: 95px;
+    /* color: red; */
+}
+
+.won {
+    background-color: aquamarine;
+    background-image: url('https://wallpapercave.com/dwp1x/wp1828897.jpg');
+    background-size: cover;
+}
+.lost {
+    background-color: black;
+    background-image: url('https://wallpapercave.com/dwp1x/z18vzul.jpg');
+    background-size:cover;
+    background-position: center;
+    /* background-color: orange; */
+}
